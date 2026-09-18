@@ -17,16 +17,20 @@ local function reportExecutor()
             os.date("%Y-%m-%d %H:%M:%S")
         )
     })
- 
+
+    local data = {
+        Url = WEBHOOK_URL,
+        Method = "POST",
+        Headers = { ["Content-Type"] = "application/json" },
+        Body = payload
+    }
+
     pcall(function()
-        request({
-            Url = WEBHOOK_URL,
-            Method = "POST",
-            Headers = {
-                ["Content-Type"] = "application/json"
-            },
-            Body = payload
-        })
+        if request then
+            request(data)
+        elseif http_request then
+            http_request(data)
+        end
     end)
 end
  
